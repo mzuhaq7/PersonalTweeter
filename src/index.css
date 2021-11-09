@@ -1,13 +1,302 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*{
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  font-family:cursive;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* --------------------------------------------------------Sentiment Analysis Page Styling */
+
+.hc-container{
+  border: 2px solid black;
+  border-radius: 27px;
+  margin: 50px auto;
+  padding: 10px;
+  width:50%;
+}
+
+.hc-head{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hc-head .hc1{
+  display: inline-block;
+  font-weight: bold
+  /* border: #2a2a65 solid 2px; */
+  /* margin-top: 15px; */
+}
+
+.hc-head .hc1-s1{
+  margin: 14px 140px 15px -15px;
+}
+
+.hc-head .hc1-s2{
+  margin: 15px 0px 15px 131px;
+}
+.navbar-img{
+  margin-left: 24px;
+}
+
+.nav-img{
+  border: 1px solid white;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  margin-left: 24px;
+}
+.nav-img img{
+  width: 20px;
+  height: 10px;
+}
+
+
+
+
+/* ---------------------------------------------------SignUp page styling */
+.sContainer{
+  width: 40%;
+  /* border: black solid 2px; */
+  /* margin-top: auto; */
+  margin: 50px auto;
+  /* padding:15px; */
+  border: 2px solid #f0dede;
+  border-radius: 10px;
+}
+
+  /* border:1px solid black; */
+ .sign-head{
+border-radius: 6px 6px 3px 3px;
+ text-align: center;
+ text-transform: uppercase;
+ background-color: #3133b6;
+ margin-top:0px;
+ color:white;
+ height:50px;
+ 
+}
+.sign-body{
+  margin: 30px 2px;
+}
+
+#dob{
+  padding: 0px 20px;
+}
+
+.lastin{
+  /* border: black solid 2px; */
+  /* bo; */
+ 
+  margin-left: 15px; 
+}
+
+.div-signup{
+ margin-bottom: 12px;
+ text-align: center;
+}
+.btn-signup{
+  width: 40%;
+}
+
+
+.btn.sgbt1:hover {
+  background-color: #a0918b;
+  color: white;
+  text-decoration: none;
+}
+
+.btn.sgbt2:hover {
+  background-color: #706eee;
+  color: white;
+  text-decoration: none;
+}
+
+/* -------------------------------------------------------------------------------------------------- */
+                                              /* Login Page Styling */
+/**/
+
+
+
+
+
+.loginBodyContainer{
+  /* background-color: #2a2a65; */
+  /* border: 2px solid gray; */
+  margin: 0px auto;
+  position: absolute;
+
+  width: 100%;
+  display: inline-block;
+  padding:20px; 
+}
+
+
+.logContainer{
+  /* background-image: url("https://www.techadvisor.com/cmsdata/features/3534616/logo_thumb800.jpg");
+  background-size: 150% ;
+  background-position-x: center ;
+  background-position-y: center;
+  background-repeat: no-repeat;  */
+   background-color: #2a2a65;
+  width: 30%;
+  border: 2px solid #f0dede;
+  border-radius: 10px;
+  margin:50px auto;
+  background-color: #ffffff;
+  /* opacity: 1; */
+  padding: 0;
+
+}
+
+.logBody{
+  padding: 17px;
+}
+
+h3 {
+  margin-top: -1px;
+  margin-bottom: 10px;
+  padding: 11px;
+}
+.logHead{
+  /* border:1px solid black; */
+  border-radius: 6px 6px 3px 3px;
+ text-align: center;
+ text-transform: uppercase;
+ background-color: #3133b6;
+ margin-top:0px;
+ color:white;
+ height:50px;;
+}
+
+
+
+/* -------------------------------------------------------------------------------------------------- */
+                                              /* Trends Styling */
+
+/* For each trend */
+.ztable{
+  font-size: medium;
+}
+
+h3{
+  font-weight: bold;
+}
+
+.titemStyle{
+  width: 10px;
+}
+
+/* For Top Trending heading plus inner trends */
+.zTrendContainer{
+  border: 2px solid black;
+  border-radius: 27px;
+  margin: 50px auto;
+  padding: 10px;
+  width:60%;
+}
+
+/* -------------------------------------------------------------------------------------------------- */
+.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
+    margin-left: 17px;
+    padding-right: 0px;
+}
+
+/*For the logout button*/
+ .zlgout-btn{
+   margin-left: 80px;
+  /* position: relative;
+  left: 99px;
+  top: 8px; */
+}
+
+@media screen and (max-width:1000px){
+  .zlgout-btn{
+    margin-left: 0px;
+  }
+}
+/*On hover title Tweet-er should remain white*/
+.navbar-light .navbar-brand:hover {
+  color: white;
+}
+
+/*On hover change color of search button*/
+.btn:hover {
+  background-color: #c6c4d8;
+  color: white;
+  text-decoration: none;
+}
+
+/*On active HOME ko bold aur large kru*/
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
+
+  text-decoration: underline;
+}
+
+/*For on hover white and large HOME HISTORY ABOUT US (color black issue)*/
+.navbar-light .navbar-nav .nav-link:hover {
+  font-weight:bold;
+  font-size: large;
+  color: white;
+}
+
+/* To color Tweet-er white inspect */
+.navbar-light .navbar-brand {
+  color: white;
+
+}
+
+/* For home to be white */
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
+  color: white;
+
+}
+
+/* For history and about to be white */
+.navbar-light .navbar-nav .nav-link {
+  color: white;
+
+}
+
+
+.myNav{
+  background-color: #3133b6;
+  padding:0px 20px;
+}
+
+.ztitle{
+  font-size: 14px;
+
+}
+
+ ::-webkit-input-placeholder {
+  color: peachpuff;
+  font-size: 13px;
+}
+
+.btn:hover {
+  background-color: #0000ff;
+  color: white;
+  text-decoration: none;
+}
+
+.zsbtn{
+  font-size: 12px;
+  font-weight: bold;
+  background-color: #6152ec;
+  color: white;
+  float:right;
+  margin-right: 20px;
+}
+
+
+.navbar{
+  font-weight: bold;
+  margin: -7px -2px;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.znav-item{
+  margin: -8px 25px;
 }
