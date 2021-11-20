@@ -4,21 +4,109 @@
   margin: 0px;
   font-family:cursive;
 }
+/* ----------------------------------------------------About Us Page */
+.abimg{
+  background-image: url("https://wallpaperaccess.com/full/4719226.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  /* height: 100px; */
+}
+
+#abbtn{
+  padding: 10px 16px;
+    font-size: 14px;
+    line-height: 1.3333333;
+    border-radius: 6px;
+}
+
+.jumbotron .h1, .jumbotron h1 {
+    font-size: 40px;
+}
+
+.jumbotron p {
+  margin-bottom: 15px;
+  font-size: 15px;
+  font-weight: 200;
+}
+
+
+
+
+/* ------------------------------------------------Tweet Configuration  */
+#tcspan{
+  margin-left: 30px;
+}
+
+#tweettone{
+  margin-left: 10px;
+}
+
+.modal-title{
+  font-weight: bold;
+}
+.tchead{
+  padding:12px;
+  display: flex;
+  justify-content: space-between;
+  border: rgb(221, 221, 221) solid 2px;
+}
+
 
 /* --------------------------------------------------------Sentiment Analysis Page Styling */
+.hcinfo-la{
+  /* display: flex;
+  justify-content: space-inline; */
+   margin-right:85px; 
+  text-align: center;
+  margin-left: 15px;
+ /* border: rgb(190, 28, 28) solid 2px;  */
+ font-weight: bold;
+
+}
+
+.hcinfo{
+  display: flex;
+  justify-content: space-between;
+  /* text-align: center; */
+  /* border: black solid 2px; */
+  margin-top: 10px;
+  margin-left: 15px;
+  font-weight: bold;
+}
+
+.hcpie{
+  margin-top: 30px;
+ margin-left: 15px;
+ font-weight: bold;
+ /* border: black solid 2px; */
+}
+
+
+.hcbtng{
+  font-weight: bold;
+  /* background-color: #6152ec;
+  color: white; */
+}
 
 .hc-container{
-  border: 2px solid black;
-  border-radius: 27px;
+  box-shadow: #0f0d0c;
+  border: 2px solid rgb(231, 231, 231);
+  border-radius: 10px;
   margin: 50px auto;
-  padding: 10px;
-  width:50%;
+  width: 50%;
 }
 
 .hc-head{
+  border: #4040de solid 4px;
+  color:#ffffff;
+  background-color: #4040de;
+  border-radius: 8px;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-between;
+  margin: 0px;
+  padding-right: 25px;
+  padding-left: 30px;
 }
 
 .hc-head .hc1{
@@ -214,6 +302,7 @@ h3{
   .zlgout-btn{
     margin-left: 0px;
   }
+  
 }
 /*On hover title Tweet-er should remain white*/
 .navbar-light .navbar-brand:hover {

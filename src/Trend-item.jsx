@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from 'react-router-dom';
 
 
 
@@ -11,7 +11,7 @@ const TrendItem = (props) => {
             <tr>
                 <th  className="titemStyle" scope="row" >{props.tid}</th>
                 <td className="titemStyle">{props.hashtagi}</td>
-                <td className="titemStyle"><a href="/"><button class="btn btn-outline-success zsbtn zstbtn" type="submit">Sentiment</button></a></td>
+                <td className="titemStyle"><Link to="/sentiment"><button class="btn btn-outline-success zsbtn zstbtn" type="submit">Sentiment</button></Link></td>
             </tr>
         </>
 

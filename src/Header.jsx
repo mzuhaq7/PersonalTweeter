@@ -1,6 +1,6 @@
 import React from "react";
 // import {avatar} from "./"
-
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
     return (
@@ -21,19 +21,21 @@ const Navbar = () => {
                                 </form>
                             </li>
                             <li className="nav-item navbar znav-item">
-                                <a className="nav-link active" aria-current="page" href="/">Home</a>
+                                <Link to="/index" className="nav-link active" aria-current="page" >Home</Link>
                             </li>
                             <li className="nav-item navbar znav-item">
-                                <a className="nav-link" href="/">History</a>
+                                <Link className="nav-link" to="/history">History</Link>
                             </li>
 
                             <li className="nav-item navbar znav-item">
-                                <a className="nav-link " href="/">About us</a>
+                                <Link className="nav-link " to="/about">About us</Link>
                             </li>
                             <li className="nav-item navbar">
+                                <Link to="/login">
                                 <button type="button" className="btn btn-default btn-sm zlgout-btn">
                                     <span className="glyphicon glyphicon-log-out"></span> Log out
                                 </button>
+                                </Link>
                             </li>
                             {/* <li className="nav-item navbar navbar-img">
                                 <div className="nav-img">
