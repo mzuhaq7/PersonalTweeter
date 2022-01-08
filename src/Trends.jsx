@@ -1,6 +1,8 @@
-import React from "react";
+import React, {useState, useEffect } from "react";
 import { TrendItem } from "./Trend-item";
 import { TData } from "./TrendData";
+// import axios from "axios";
+import axios, * as others from 'axios';
 
 // Get data from TData and get custom made tag from TrendItem then make a funciton for mapping then call the map() method below and map data into
 // custom tag
@@ -13,6 +15,15 @@ const nTrend = (val) => {
 }
 
 const Trends = () => {
+    const [trends, setTrends] = useState([])
+    const [loading, setLoading] = useState(true)
+    useEffect(()=>{
+        axios.get('http://localhost:8000/').then((res)=>{
+            console.log(res.data.trends)
+            setLoading(false)
+            setTrends(res.data.trends)
+        }).catch(err => console.log(err))
+    },[])
     return (
         <>
             <div className="zTrendContainer">
@@ -30,8 +41,8 @@ const Trends = () => {
                         </thead>
                         <tbody>
 
-                            {TData.map(nTrend)}
-
+                            {loading ? 'Loading...' : trends.map(nTrend)}
+                            {/* {loading && 'Loading...'} */}
                         </tbody>
                     </table>
                 </div>

@@ -48,7 +48,7 @@ const GenItem = (props) => {
                 <th  className="titemStyle" scope="row" >{props.tid}</th>
                 <td className="titemStyle">{props.hashtagi}</td>
                 <td className="titemStyle">{props.tweetg}</td>
-                <td className="titemStyle"><Link to="/gentweet"><button class="btn btn-outline-success zsbtn zstbtn" type="submit">Post to Twitter</button></Link></td>
+                <td className="titemStyle"><Link to="/gentweet"><button className="btn btn-outline-success zsbtn zstbtn" type="submit">Post to Twitter</button></Link></td>
             </tr>
         </>
 

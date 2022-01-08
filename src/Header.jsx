@@ -17,7 +17,7 @@ const Navbar = () => {
                             <li className="nav-item navbar znav-item">
                                 <form className="d-flex">
                                     <input className="form-control me-2 sbar zsrh" type="search" placeholder="Enter Trend to Search" aria-label="Search" />
-                                    <button class="btn btn-outline-success zsbtn" type="submit">Search</button>
+                                    <button className="btn btn-outline-success zsbtn" type="submit">Search</button>
                                 </form>
                             </li>
                             <li className="nav-item navbar znav-item">

@@ -1,6 +1,9 @@
-import React from "react";
+import React, {useState} from "react";
 import { Link } from 'react-router-dom';
 const Login = () => {
+    const [email,setemail]=useState("");
+    const [password, setpassword] = useState("");
+
     return (
         <>
             <div className="loginBodyContainer">
@@ -17,12 +20,12 @@ const Login = () => {
                         <form action="/index">
                             <div className="form-group">
                                 <label for="exampleInputEmail1">Email address</label>
-                                <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" required/>
+                                <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" autoComplete="off" value={email} onChange={(e)=>{setemail(e.target.value)}} required/>
                                 <small id="emailHelp" className="form-text text-muted">We'll never share your email with anyone else.</small>
                             </div>
                             <div className="form-group">
                                 <label for="exampleInputPassword1">Password</label>
-                                <input type="password" className="form-control" id="exampleInputPassword1" placeholder="Password" required/>
+                                <input type="password" className="form-control" id="exampleInputPassword1" placeholder="Password" autoComplete="off" value={password} onChange={(e)=>{setpassword(e.target.value)}} required/>
                             </div>
 
                             {/* Button for login */}

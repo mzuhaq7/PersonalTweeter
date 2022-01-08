@@ -11,7 +11,7 @@ const TrendItem = (props) => {
             <tr>
                 <th  className="titemStyle" scope="row" >{props.tid}</th>
                 <td className="titemStyle">{props.hashtagi}</td>
-                <td className="titemStyle"><Link to="/sentiment"><button class="btn btn-outline-success zsbtn zstbtn" type="submit">Sentiment</button></Link></td>
+                <td className="titemStyle"><Link to="/sentiment"><button className="btn btn-outline-success zsbtn zstbtn" type="submit">Sentiment</button></Link></td>
             </tr>
         </>
 
